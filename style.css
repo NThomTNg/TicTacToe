@@ -1,0 +1,96 @@
+
+body{
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-size: 20px 20px;
+    background-image:  repeating-linear-gradient(0deg, #000000, #000000 1px, #e5e5f7 1px, #e5e5f7);
+}
+
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.cell:hover {
+    background-color: aliceblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#containerGame{
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+}
+
+#containerCell{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+#restart {
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Permanent Marker", cursive;
+  font-size: 20px;
+  font-weight: 60;
+  line-height: normal;
+  margin: 0;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 20%;
+  will-change: transform;
+}
+
+#restart:disabled {
+  pointer-events: none;
+}
+
+#restart:hover {
+  color: #000000;
+  background-color: aliceblue;  
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+#restart:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+#scribble {
+    font-family: 'Comic Sans MS', cursive; 
+    color: #050505; 
+    transform: rotate(-2deg); 
+    display: inline-block; 
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+#scribble1 {
+    font-family: 'Monotype Corsiva', cursive; 
+    font-size: 50px;
+    color: #050505; 
+    transform: rotate(5deg) translateY(80px) translateX(600px); 
+    display: inline-block; 
+    position: absolute; 
+}
