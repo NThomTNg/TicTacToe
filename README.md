@@ -1,3 +1,3 @@
 # TicTacToe
 
-Enkelt tic tac toe spill med bruk av Javascript
+A easy game of tic tac toe using Javascript
